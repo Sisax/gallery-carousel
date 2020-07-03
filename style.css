@@ -1,0 +1,81 @@
+body {
+    background-image: linear-gradient(#333, #111);
+    background-size: 140vh;
+}
+
+.mainContainer {
+    width: 720px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 5%;
+}
+
+.image {
+    display: flex;
+    width: 100%;
+
+}
+
+.big-image {
+    width: 720px;
+}
+
+#left-button {
+    left: 5%;
+}
+
+
+.mainContainer:hover #left-button, .mainContainer:hover #right-button {
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.mainContainer:not(:hover) #left-button, .mainContainer:not(:hover) #right-button {
+    transition: 0.5s;
+}
+
+#right-button {
+    right: 5%;
+}
+
+#right-button, #left-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    font-size: 40px;
+    cursor: pointer;
+    opacity: 0;
+    opacity: 0;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+    height: 60px;
+    width: 78px;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.mainContainer #right-button:hover, .mainContainer #left-button:hover {
+    opacity: 0.8;
+}
+
+.info {
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    width: 100%;
+    background-image:linear-gradient( #333, black);
+    color: white;
+    opacity: 0.4;
+    text-align: center;
+}
+
+.mainContainer:hover .info {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.mainContainer:not(:hover) .info {
+    transition: 0.5s;
+}

@@ -1,0 +1,22 @@
+// lapozás
+
+button click-re egyel tovább (vagy visszafele) menjen a kép
+	transition
+	counter++ (vagy counter--)
+
+// képek váltása
+
+.image tartalmát variablebe helyezni
+.big-image-container tartalmát var-ba helyezni
+
+két button var-ba helyezése
+
+képek számolása arrayszerűen (let counter = 1;)
+
+egy adott méret beállítása ami a képpel egyenlő vanilla js: (const size = carouselImages[0].clientWidth;)
+
+.image css változtatása -> translateX (előzőleg beálított méret * counter) + px;
+
+// thumbnail kattintás
+
+lehetne html <a> elemmel, vagy click event
